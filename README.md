@@ -1,1 +1,1 @@
-# Debugging-JS-with-Chrome
+# Debugging JavaScript with Chrome Dev-Tools
