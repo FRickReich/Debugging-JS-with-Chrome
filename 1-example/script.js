@@ -13,7 +13,6 @@ function getTime ()
 
 function handleClick()
 {
-    currentTime = getTime();
     const newTime = currentTime;
     timeOutput.innerHTML = newTime;
 }
