@@ -35,8 +35,6 @@ function addItemToList(value)
     completedButton.innerHTML = "✓";
     
     newTodo.appendChild(completedButton);
-    
-    
 
     todoList.appendChild(newTodo);
 }
