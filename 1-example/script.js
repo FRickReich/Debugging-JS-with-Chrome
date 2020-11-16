@@ -5,7 +5,6 @@ let currentTime = getTime();
 
 timeButton.addEventListener("click", handleClick);
 
-
 function getTime ()
 {
     return new Date().toLocaleTimeString();
