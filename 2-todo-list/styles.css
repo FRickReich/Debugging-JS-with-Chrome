@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background: #2E3440;
+    font-family: 'Roboto', sans-serif;
+}
+
+header 
+{
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+    color: white;
+}
+
+.todo
+{
+    border-radius: 5px 5px 0 0;
+    background: #ECEFF4;
+    margin: 0 auto;
+    width: 520px;
+    min-height: calc(100vh - 4em);
+    position: relative;
+}
+
+.todo .todo_list
+{
+    padding-left: 0;
+}
+
+.todo .todo_input,
+.todo .todo_item:focus
+{
+    margin: 10px 10px 0 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(100% - 40px);
+    border: 0;
+    color: black;
+    background: #D8DEE9;
+    position: relative; 
+}
+.todo .todo_button
+{
+    position: absolute;
+    top: 18px;
+    background: transparent;
+    border: 0;
+    right: 15px;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+}
+
+.todo .todo_list .todo_item
+{
+    list-style: none;
+    margin: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background: #BF616A;
+    position: relative;
+}
+.todo .todo_list .todo_item .check_button:focus,
+.todo .todo_list .todo_item .check_button:active,
+.todo .todo_list .todo_item .check_button
+{
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    right: 5px;
+    top: 8px;
+    border: 0;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+
+}
+
+.todo .todo_list .todo_item.completed
+{
+    background: #A3BE8C;
+}
+
+.todo .todo_list .todo_item.completed .check_button
+{
+    display: none;
+}
